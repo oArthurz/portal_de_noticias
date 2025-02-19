@@ -15,6 +15,9 @@
         <button type="submit">Pesquisar</button>
       </form>
     </div>
+    <div class="botaoMenu">
+      <button class="button">Abrir Menu</button>
+    </div>
     <nav class="container">
       <ul class="menu">
         <li>
@@ -111,5 +114,15 @@
       </section>
     </aside>
   </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function()
+    {
+      $(".botaoMenu").click(function()
+      {
+        $(".menu").slideToggle()
+      })
+    })
+  </script>
 </body>
 </html>
